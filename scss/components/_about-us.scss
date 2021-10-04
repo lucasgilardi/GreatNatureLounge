@@ -1,0 +1,32 @@
+.aboutUs-background{
+    height: 100vh;
+    background-image: url(../img/aboutus.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: solid 3rem #2A435B;
+
+    @media (max-width: 48em){
+        border: solid 1.5rem #2A435B;
+    }
+}
+.aboutUs-col-2{
+    background-color: #EFEAE5;
+}
+.horizontal-line{
+    height: 0.2rem!important;
+    width: 80%;
+    opacity: 100;
+    background-color: #2A435B;
+}
+
+h3{
+    color: #2A435B;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.aboutUs-text{
+    color: #2A435B;
+    font-weight: 300;
+    width: 80%;
+}

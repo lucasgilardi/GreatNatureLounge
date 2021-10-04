@@ -1,0 +1,43 @@
+.clients-article{
+    height: 100vh;
+    background-color: #2A435B;
+
+    @media (max-width: 48em){
+        height: auto;
+    }
+}
+.h3-white{
+    color: #EFEAE5;
+    font-weight: 700;
+    font-size: 2rem;
+}
+h4{
+    color: #EFEAE5;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.client-profesion{
+    color: #EFEAE5;
+    font-weight: 300;
+    font-size: 0.7rem;
+}
+.client-img{
+    max-width: 100%;
+    width: 10rem!important;
+    border-radius: 50%;
+}
+.client-text{
+    color: #EFEAE5;
+    font-weight: 300;
+    font-size: 0.8rem;
+    width: 80%;
+    text-align: justify;
+    padding-top: 1rem;
+}
+.div-border-right{
+    border-right: solid 0.1rem #efeae5;
+
+    @media (max-width: 48em){
+        border-right: none;
+    }
+}

@@ -1,0 +1,35 @@
+footer{
+    background-color: #efeae5;
+}
+.footer-background{
+    height: 100vh;
+    background-image: url(../img/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: solid 3rem #2A435B;
+}
+h5{
+    color: #2A435B;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+.contact-data{
+    color: #2A435B;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+.turno-btn{
+    background-color: #2a435b;
+    color: #efeae5;
+    text-decoration: none;
+    padding: 0.8rem;
+    width: 80%;
+    text-align: center;
+    margin: 0.6rem 0rem;
+
+    &:hover{
+        background-color: #223446;
+        color: #efeae5;
+    }
+}

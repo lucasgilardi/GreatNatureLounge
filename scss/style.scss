@@ -1,0 +1,16 @@
+//General settings
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+//Partial imports
+@import 'components/header';
+@import 'components/home';
+@import 'components/about-us';
+@import 'components/services';
+@import 'components/clients';
+@import 'components/footer';
+@import 'components/appointments';
