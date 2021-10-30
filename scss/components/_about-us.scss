@@ -1,32 +1,28 @@
 .aboutUs-background{
-    height: 100vh;
-    background-image: url(../img/aboutus.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border: solid 3rem #2A435B;
+    @include background-image(url(../img/aboutus.jpg), solid 3rem $dark-blue);
 
     @media (max-width: 48em){
-        border: solid 1.5rem #2A435B;
+        border: solid 1.5rem $dark-blue;
     }
 }
 .aboutUs-col-2{
-    background-color: #EFEAE5;
+    background-color: $white;
 }
 .horizontal-line{
-    height: 0.2rem!important;
     width: 80%;
     opacity: 100;
-    background-color: #2A435B;
+    background-color: $dark-blue;
 }
-
+hr:not([size]){
+    height: 0.2rem;
+}
 h3{
-    color: #2A435B;
+    color: $dark-blue;
     font-weight: 700;
     font-size: 2rem;
 }
 .aboutUs-text{
-    color: #2A435B;
+    color: $dark-blue;
     font-weight: 300;
     width: 80%;
 }

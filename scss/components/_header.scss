@@ -1,17 +1,14 @@
-nav{
-    ul{
-        li{
-            a{
-                color: #88A09E!important;
-                font-weight: 700;
+.navbar-light{
+    .navbar-nav{
+        .nav-link{
+            color: $blue-light;
+            font-weight: 700;
 
-                &:hover{
-                    color: #728583!important;
-                }
-
-                @media (max-width: 575.98px){
-                    color: #efeae5!important;
-                }
+            &:hover{
+                color: $blue-light-hover;
+            }
+            @media (max-width: 61.99em){
+                color: $white;
             }
         }
     }
@@ -19,31 +16,33 @@ nav{
 
 .hamburger-icon{
     font-size: 1.2rem;
-    color: #88A09E;
+    color: $blue-light;
 }
 
 .navbar-collapse{
-    @media (max-width: 575.98px){
-        background-color: #2a435b;;
+    @media (max-width: 61.99em){
+        background-color: $dark-blue-hover;
         padding: 0.5rem;
         margin-top: 1rem;
-        box-shadow: -5px 7px 14px -8px rgb(0 0 0 / 71%);
+        box-shadow: unquote('-5px 7px 14px -8px rgb(0 0 0 / 71%)');
     }
 
     ul{
         li{
-            @media (max-width: 575.98px){
+            @media (max-width: 61.99em){
                 padding: 0.5rem;
             }
         }
     }
 }
 
-.navbar-light .navbar-toggler{
-    color: rgb(255 255 255);
-    border-color: rgb(255 255 255);
-
-    &:focus{
-        box-shadow: none;
+.navbar-light{
+    .navbar-toggler{
+        color: $white;
+        border-color: $white;
+    
+        &:focus{
+            box-shadow: none;
+        }
     }
 }

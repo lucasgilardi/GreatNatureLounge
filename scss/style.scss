@@ -7,6 +7,11 @@
 }
 
 //Partial imports
+//Base
+@import 'base/variables';
+@import 'base/mixin';
+
+//Components
 @import 'components/header';
 @import 'components/home';
 @import 'components/about-us';

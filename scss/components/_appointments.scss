@@ -1,20 +1,15 @@
 .body-turnos{
-    background-color: #EFEAE5;
+    background-color: $white;
 }
 .appointment-background{
-    height: 100vh;
-    background-image: url(../img/appointment-background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border: solid 3rem #2A435B;
+    @include background-image(url(../img/appointment-background.jpg), solid 3rem $dark-blue);
 
     @media (max-width: 48em){
-        border: solid 1.5rem #2A435B;
+        border: solid 1.5rem $dark-blue;
     }
 }
 .appointment-title{
-    color: #2A435B;
+    color: $dark-blue;
     font-weight: 700;
     font-size: 2rem;
     text-align: center;
@@ -23,7 +18,7 @@
 .appointment-text{
     text-align: center;
     font-size: 0.9rem;
-    color: #2a435b;
+    color: $dark-blue;
     font-weight: 300;
 }
 /*Form turnos*/
@@ -33,7 +28,7 @@ form{
 form label{
     font-size: 0.8rem;
     font-weight: 700;
-    color: #2a435b;
+    color: $dark-blue;
 }
 form input{
     display: block;
@@ -42,10 +37,10 @@ form input{
     padding: 0.5rem;
     border: none;
     border-radius: 0.2rem;
-    box-shadow: 3px 3px 3px 0px rgb(0 0 0 / 5%);
+    box-shadow: unquote('3px 3px 3px 0px rgb(0 0 0 / 5%)');
     font-size: 0.8rem;
     font-weight: 300;
-    color: #2a435b;
+    color: $dark-blue;
 
     &:focus{
         outline: none;
@@ -53,11 +48,11 @@ form input{
 }
 form input[type="submit"]{
     margin: 2rem auto;
-    background-color: #2a435b;
-    color: #efeae5;
+    background-color: $dark-blue;
+    color: $white;
 
     &:hover{
-        background-color: #223446;
+        background-color: $dark-blue-hover;
     }
 }
 
@@ -73,17 +68,17 @@ form input[type="submit"]{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #2a435b;
-    box-shadow: -5px 7px 14px -8px rgb(0 0 0 / 80%);
+    background-color: $dark-blue-hover;
+    box-shadow: unquote('-5px 7px 14px -8px rgb(0 0 0 / 80%)');
 
-    @media (max-width: 575.98px){
+    @media (max-width: 61.99em){
         width: 90%;
     }
 
     h6{
         font-size: 1.2rem;
         font-weight: 700;
-        color: #efeae5;
+        color: $white;
         padding-top: 1rem;
     }
 
@@ -101,7 +96,7 @@ form input[type="submit"]{
         font-size: 0.8rem;
         font-weight: 700;
         margin-bottom: 1rem;
-        background-color: #efeae5;
-        color: #2a435b;
+        background-color: $white;
+        color: $dark-blue;
     }
 }

@@ -1,18 +1,18 @@
 .services-article{
     height: 100vh;
-    background-color: #EFEAE5;
+    background-color: $white;
 
     @media (max-width: 48em){
         height: auto;
     }
 }
 .services-text{
-    color: #2A435B;
+    color: $dark-blue;
     font-weight: 300;
     font-size: 1rem;
 }
 .services-description{
-    color: #2A435B;
+    color: $dark-blue;
     font-weight: 500;
     font-size: 0.8rem;
     text-align: center;

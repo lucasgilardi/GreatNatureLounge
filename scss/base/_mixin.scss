@@ -1,0 +1,8 @@
+@mixin background-image($background-image, $border){
+    height: 100vh;
+    background-image: $background-image;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: $border;
+}
